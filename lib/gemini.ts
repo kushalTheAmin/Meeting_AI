@@ -22,7 +22,7 @@ export async function generateSummary(
   template: SummaryTemplate = 'meeting'
 ): Promise<Summary> {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
     const prompt = getSummaryPrompt(template, transcript);
 
     const result = await model.generateContent(prompt);
@@ -156,7 +156,7 @@ export async function generateSummaryWithRetry(
  */
 export async function testGeminiConnection(): Promise<boolean> {
   try {
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
     const result = await model.generateContent('Test');
     const response = result.response.text();
     return !!response;

@@ -8,7 +8,7 @@ async function testGemini() {
     }
 
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
 
     const result = await model.generateContent('Say "Gemini API is working!"');
     const response = result.response.text();

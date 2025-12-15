@@ -11,7 +11,7 @@ AI-powered voice recording, transcription, and summarization web application bui
 
 - **🎙️ High-Quality Recording** - Browser-based audio recording up to 10 minutes
 - **✨ AI Transcription** - Powered by Groq Whisper-large-v3 (unlimited free tier)
-- **📝 Smart Summaries** - Google Gemini 1.5 Flash for intelligent summarization
+- **📝 Smart Summaries** - Google Gemini 2.0 Flash (experimental) for intelligent summarization
 - **💾 Cloud Storage** - Supabase for audio files and recordings database
 - **🎯 Multiple Templates** - Meeting notes, interviews, lectures, and voice memos
 - **📱 Responsive Design** - Works seamlessly on desktop and mobile
@@ -31,7 +31,7 @@ AI-powered voice recording, transcription, and summarization web application bui
 
 ### Backend & APIs (100% FREE)
 - **Groq API** - Whisper-large-v3 transcription (unlimited free)
-- **Google Gemini 1.5 Flash** - AI summarization (free tier)
+- **Google Gemini 2.0 Flash** - AI summarization (experimental, free tier)
 - **Supabase** - Storage and database (free tier)
 
 ### Testing
